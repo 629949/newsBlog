@@ -1,0 +1,203 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex; /* Arrange nav items horizontally */
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 1rem; /* Add spacing between nav links */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: orangered; /* Add a hover effect */
+  }
+
+
+h1 {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topContent{
+    display: flex;
+    flex-direction: row;
+}
+.blockImage{
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+}
+
+.blockImage img{
+    width: 500px;
+}
+
+.web3{
+   width: 500px; 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   gap: 20px;
+
+}
+
+.web3 h2{
+    display: flex;
+    width: 450px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.evolution{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.evolution a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: orangered;
+    height: 55px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.evolution a:hover{
+    background-color: #03001C;
+    color: white;
+}
+
+.highlights {
+    background-color: #03001C;
+    color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlights h3{
+    color: orange;
+    font-size: 30px;
+    display: flex;
+    width: 90%;
+    height: 55px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.popup{
+    border-bottom: 1px solid white;
+    width: 250px;
+    justify-items: flex-start;
+}
+
+.popup p {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.other {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    height: 200px;
+}
+
+
+
+.articles{
+    display: flex;
+    gap: 10px;
+
+}
+
+.articles img {
+    height: 120px;
+
+}
+
+.computer{
+    display: flex;
+    width: 210px;
+    flex-direction: column;
+    margin: 0;
+    
+}
+
+.computer h5{
+    font-weight: bolder;
+    font-size: larger;
+    color: orangered;
+    margin: 0;
+}
+
+.computer h6{
+    margin: 0;
+    padding: auto;
+    font-size: 15px;
+}
+
+.computer h6 a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.computer h6 a:hover{
+    color: orangered;
+}
+
+
