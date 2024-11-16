@@ -1,21 +1,38 @@
 body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
 .header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+.header h1{
+
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+}
+
 
 nav ul {
     display: flex; /* Arrange nav items horizontally */
     list-style: none; /* Remove bullets */
     margin: 0;
     padding: 0;
+    width: 30rem;
+    justify-content: space-around;
   }
   
   nav ul li {
@@ -25,7 +42,7 @@ nav ul {
   nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: lighter;
   }
   
   nav ul li a:hover {
@@ -49,15 +66,18 @@ h1 {
 .topContent{
     display: flex;
     flex-direction: row;
+    gap: 40px;
+    align-items: top;
+    width: 65rem;
 }
 .blockImage{
     display: flex;
-    width: 800px;
+    width: 650px;
     flex-direction: column;
 }
 
 .blockImage img{
-    width: 500px;
+    width: 650px;
 }
 
 .web3{
@@ -74,6 +94,8 @@ h1 {
     display: flex;
     width: 450px;
     height: 150px;
+    font-size: 35px;
+    font-weight: 750;
     justify-content: center;
     align-items: center;
 }
@@ -89,12 +111,14 @@ h1 {
     text-decoration: none;
     color: black;
     background-color: orangered;
-    height: 55px;
+    height: 45px;
     width: 180px;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
     font-size: 15px;
+    text-shadow: black;
+    text-align: center;
 }
 
 .evolution a:hover{
@@ -135,25 +159,28 @@ h1 {
     font-size: 14px;
 }
 
+.popup a{
+    text-decoration: none;
+    color: white;
+    
+}
 
+.popup h4 a:hover{
+    color: orange;
+}
 
-
-
-
-
-
-
-
-
-
+#lastPopup {
+    border: none;
+}
 
 .other {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
     align-items: center;
     height: 200px;
+    width: 60rem;
 }
 
 
@@ -171,7 +198,7 @@ h1 {
 
 .computer{
     display: flex;
-    width: 210px;
+    width: 200px;
     flex-direction: column;
     margin: 0;
     
