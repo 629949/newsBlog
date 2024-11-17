@@ -259,9 +259,12 @@ h1 {
   }
   
   @media screen and (max-width: 480px) {
+
     .header {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      justify-content: center;
+      border: 1px solid;
     }
     nav ul {
       flex-direction: column;
