@@ -85,14 +85,15 @@ h1 {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-   align-items: center;
-   gap: 20px;
+   align-items: top;
 
+   margin: 0px;
+   width: 650px;
 }
 
 .web3 h2{
     display: flex;
-    width: 450px;
+    width: 250px;
     height: 150px;
     font-size: 35px;
     font-weight: 750;
@@ -103,7 +104,19 @@ h1 {
 .evolution{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     width: 500px;
+}
+
+.evolution p{
+    display: flex;
+    align-items: center;
+    text-wrap: wrap;
+    height: 100px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 .evolution a{
@@ -119,6 +132,8 @@ h1 {
     font-size: 15px;
     text-shadow: black;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .evolution a:hover{
@@ -173,6 +188,8 @@ h1 {
     border: none;
 }
 
+
+
 .other {
     display: flex;
     flex-direction: row;
@@ -180,7 +197,7 @@ h1 {
     gap: 10px;
     align-items: center;
     height: 200px;
-    width: 60rem;
+    width: 65rem;
 }
 
 
@@ -188,7 +205,7 @@ h1 {
 .articles{
     display: flex;
     gap: 10px;
-
+    width: 500px;
 }
 
 .articles img {
@@ -201,7 +218,6 @@ h1 {
     width: 200px;
     flex-direction: column;
     margin: 0;
-    
 }
 
 .computer h5{
@@ -228,3 +244,31 @@ h1 {
 }
 
 
+@media screen and (max-width: 768px) {
+    .topContent {
+      flex-direction: column;
+      width: 100%;
+    }
+    .web3 {
+      flex-direction: column;
+      width: auto;
+    }
+    .evolution {
+      width: auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    .other {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  
