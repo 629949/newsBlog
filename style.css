@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -49,6 +49,9 @@ nav ul {
     color: orangered; /* Add a hover effect */
   }
 
+.dropDown{
+    display: none;
+}
 
 h1 {
   width: 200px;
@@ -123,9 +126,10 @@ h1 {
     display: flex;
     text-decoration: none;
     color: black;
+    letter-spacing: 8px;
     background-color: orangered;
     height: 45px;
-    width: 180px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
@@ -145,6 +149,7 @@ h1 {
     background-color: #03001C;
     color: white;
     width: 300px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,6 +301,10 @@ h1 {
         width: 30px;
          display: none; 
         background-image: url(images/icon-menu.svg);
+    }
+
+    .dropDown{
+        display: block;
     }
     .other {
       flex-direction: column;

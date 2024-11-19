@@ -1,14 +1,17 @@
-// let firstNumber = parseInt(prompt("Please input the first number"));
-// let secondNumber =  parseInt(prompt("Please input the second number"));
-// let final = prompt("what case");
-// switch(final){
-//     case 1:
-//         final = firstNumber + secondNumber;
-//         console.log("The sum is" + final);
-//         break;
-
-//         case 2:
-//             final = firstNumber - secondNumber;
-//             console.log("the difference is" + final)
-//             break
-// }
+function myFunction() {
+    document.getElementById("dropDown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropDown')) {
+      var dropdowns = document.getElementsByClassName("dropDown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
